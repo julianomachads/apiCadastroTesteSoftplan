@@ -7,12 +7,14 @@ import { Cadastrar } from '../Pages/Cadastrar';
 import { Alterar } from '../Pages/Alterar';
 import { Consultar } from '../Pages/Consultar';
 import { Excluir } from '../Pages/Excluir';
+import { Source } from '../Pages/Source';
 
 export const Routes = () => (
 
     <BrowserRouter>
         <Switch>
             <Route exact path="/" component={ () => <Login />}/>
+            <Route exact path="/source" component={ () => <Source />}/>
             <PrivateRoute exact path="/menu" component={ () => <Menu />}/>
             <PrivateRoute exact path="/menu/cadastrarPessoas" component={ () => <Cadastrar />}/>
             <PrivateRoute exact path="/menu/listarPessoas" component={ () => <Consultar />}/>
